@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slide Navbar</title>
+	<link rel="stylesheet"  href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="main">  	
+		<input type="checkbox" id="chk" aria-hidden="true">
+
+			<div class="signup">
+				<form>
+					<label for="chk" aria-hidden="true">Sign up</label>
+					<input type="text" name="txt" placeholder="User name" required="">
+					<input type="email" name="email" placeholder="Email" required="">
+					<input type="password" name="pswd" placeholder="Password" required="">
+					<input type="password" name="confirm-password" placeholder="Confirm Password" required="">
+                    <button>Sign up</button>
+				</form>
+			</div>
+
+			<div class="login">
+				<form>
+					<label for="chk" aria-hidden="true">Login</label>
+					<input type="email" name="email" placeholder="Email" required="">
+					<input type="password" name="pswd" placeholder="Password" required="">
+					<button>Login</button>
+				</form>
+			</div>
+	</div>
+	<script src="assets/js/app.js"></script>
+<script>
+document.querySelector(".signup form").addEventListener("submit", e => {
+    e.preventDefault();
+    const email = e.target.email.value;
+    const password = e.target.pswd.value;
+    signup(email, password);
+});
+
+document.querySelector(".login form").addEventListener("submit", e => {
+    e.preventDefault();
+    const email = e.target.email.value;
+    const password = e.target.pswd.value;
+    login(email, password);
+});
+</script>
+
+</body>
+</html>
