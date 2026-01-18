@@ -11,6 +11,19 @@ A production-ready, security-first password manager built with FastAPI, demonstr
 
 ---
 
+## 📸 Screenshots
+
+### Login Page
+[![Login](screenshots/login.png)](screenshots/login.png)
+
+### Sign Up Page
+[![Sign Up](screenshots/signup.jpeg)](screenshots/signup.jpeg)
+
+### Dashboard
+[![Dashboard](screenshots/dashboard.png)](screenshots/dashboard.png)
+
+---
+
 ## ✨ Features
 
 ### 🔑 Authentication & Security
@@ -54,9 +67,9 @@ A production-ready, security-first password manager built with FastAPI, demonstr
 .
 ├── backend/
 │   ├── Dockerfile
-│   ├── requirements. txt
+│   ├── requirements.txt
 │   └── app/
-│       ├── main. py
+│       ├── main.py
 │       ├── core/        # config, deps, security
 │       ├── db/          # session, base
 │       ├── models/      # user, password
@@ -64,7 +77,7 @@ A production-ready, security-first password manager built with FastAPI, demonstr
 │       └── utils/       # crypto helpers
 ├── frontend/
 │   ├── index.html
-│   ├── dashboard. html
+│   ├── dashboard.html
 │   └── assets/
 └── docker-compose.yml
 ```
@@ -90,7 +103,7 @@ FERNET_KEY=your_fernet_key
 **Generate a Fernet key:**
 
 ```bash
-python -c "from cryptography.fernet import Fernet; print(Fernet. generate_key().decode())"
+python -c "from cryptography.fernet import Fernet; print(Fernet.generate_key().decode())"
 ```
 
 ### 2️⃣ Run with Docker
@@ -173,4 +186,4 @@ Contributions, issues, and feature requests are welcome!
 
 ## ⭐ Show your support
 
-Give a ⭐️ if this project helped you! 
+Give a ⭐️ if this project helped you!
